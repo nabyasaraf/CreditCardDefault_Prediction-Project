@@ -1,0 +1,193 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="LIMIT_BAL">LIMIT_BAL:</label>
+        <input type="text" id="LIMIT_BAL" name="LIMIT_BAL" placeholder="Enter LIMIT_BAL value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="AGE">AGE:</label>
+        <input type="text" id="AGE" name="AGE" placeholder="Enter AGE value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="BILL_AMT1">BILL_AMT1:</label>
+        <input type="text" id="BILL_AMT1" name="BILL_AMT1" placeholder="Enter BILL_AMT1 value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="BILL_AMT2">BILL_AMT2:</label>
+        <input type="text" id="BILL_AMT2" name="BILL_AMT2" placeholder="Enter BILL_AMT2 value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="BILL_AMT3">BILL_AMT3:</label>
+        <input type="text" id="BILL_AMT3" name="BILL_AMT3" placeholder="Enter BILL_AMT3 value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="BILL_AMT4">BILL_AMT4:</label>
+        <input type="text" id="BILL_AMT4" name="BILL_AMT4" placeholder="Enter BILL_AMT4 value (float)">
+    </div>    
+    
+    <div class="form-group">
+        <label for="BILL_AMT5">BILL_AMT5:</label>
+        <input type="text" id="BILL_AMT5" name="BILL_AMT5" placeholder="Enter BILL_AMT5 value (float)">
+    </div> 
+
+    <div class="form-group">
+        <label for="BILL_AMT6">BILL_AMT6:</label>
+        <input type="text" id="BILL_AMT6" name="BILL_AMT6" placeholder="Enter BILL_AMT6 value (float)">
+    </div> 
+
+    <div class="form-group">
+        <label for="PAY_AMT1">PAY_AMT1:</label>
+        <input type="text" id="PAY_AMT1" name="PAY_AMT1" placeholder="Enter PAY_AMT1 value (float)">
+    </div> 
+
+    <div class="form-group">
+        <label for="PAY_AMT2">PAY_AMT2:</label>
+        <input type="text" id="PAY_AMT2" name="PAY_AMT2" placeholder="Enter PAY_AMT2 value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="PAY_AMT3">PAY_AMT3:</label>
+        <input type="text" id="PAY_AMT3" name="PAY_AMT3" placeholder="Enter PAY_AMT3 value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="PAY_AMT4">PAY_AMT4:</label>
+        <input type="text" id="PAY_AMT4" name="PAY_AMT4" placeholder="Enter PAY_AMT4 value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="PAY_AMT5">PAY_AMT5:</label>
+        <input type="text" id="PAY_AMT5" name="PAY_AMT5" placeholder="Enter PAY_AMT5 value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="PAY_AMT6">PAY_AMT6:</label>
+        <input type="text" id="PAY_AMT6" name="PAY_AMT6" placeholder="Enter PAY_AMT6 value (float)">
+    </div>
+  
+<div class="form-group">
+  <label for="SEX">SEX:</label>
+  <select id="SEX" name="SEX">
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="EDUCATION">EDUCATION:</label>
+  <select id="EDUCATION" name="EDUCATION">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="MARRIAGE">MARRIAGE:</label>
+  <select id="MARRIAGE" name="MARRIAGE">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+</div>
+
+<div class="form-group">
+    <label for="PAY_0">PAY_0:</label>
+    <select id="PAY_0" name="PAY_0">
+      <option value="-1">-1</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="PAY_2">PAY_2:</label>
+    <select id="PAY_2" name="PAY_2">
+      <option value="-1">-1</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="PAY_3">PAY_3:</label>
+    <select id="PAY_3" name="PAY_3">
+      <option value="-1">-1</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="PAY_4">PAY_4:</label>
+    <select id="PAY_4" name="PAY_4">
+      <option value="-1">-1</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="PAY_5">PAY_5:</label>
+    <select id="PAY_5" name="PAY_5">
+      <option value="-1">-1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="PAY_6">PAY_6:</label>
+    <select id="PAY_6" name="PAY_6">
+      <option value="-1">-1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+  </div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
