@@ -60,8 +60,10 @@ jobs:
           # be deployed to ECS.
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          name: Set output value
-          run: echo "OUTPUT_NAME=output_value" >> $GITHUB_ENV
+          name: Save state
+          run: echo "{name}={value}" >> $GITHUB_STATE
+          name: Set output
+          run: echo "{name}={value}" >> $GITHUB_OUTPUT
 
           
           
